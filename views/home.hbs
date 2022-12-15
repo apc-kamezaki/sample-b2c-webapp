@@ -1,0 +1,15 @@
+<div>
+  <div>
+    {{#if isAuthenticated}}
+      <h5>You have signed in</h5>  
+      <button onclick="location.href='/auth/signout'">Sign-Out</button>
+    {{else}}
+      <button onclick="location.href='/auth/signin'">Sign-In</button>
+    {{/if}}
+  </div>
+  <div>
+    {{#if message}}
+      <h5>{{message}}</h5>
+    {{/if}}
+  </div>
+</div>
